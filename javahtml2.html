@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>javafun</title>
+<script>
+function textvalidate()
+{
+var numbers = /^[0-9]+$/;
+if(document.getElementById("text1").value.match(numbers))
+{
+document.getElementById("demo").innerHTML = "Please enter only text";
+}
+else
+{
+document.getElementById("demo").innerHTML = "";
+}
+}
+  var string = "sravani and  gangadhar from india";
+    a = string.substring(5, 17)
+    c = string.slice(0,5)
+    d = string.split(" ")
+     e = string.match("zx")
+	 f = string.indexOf("v")
+	 
+    // Printing new string which are
+    // the part of the given string
+    document.write(a + "<br>");
+    document.write(c + "<br>");
+    document.write(d + "<br>");
+	document.write(e + "<br>");
+	document.write(f + "<br>");
+	 var text ="      sravani gangadhar    ";
+	str = text.trim()
+	document.write(str);
+ </script>
+
+</head>
+<body>
+<form name="letters">
+ field1 :<input type="text" name="letters" id="text1" oninput="textvalidate()"/>
+
+<p id="demo"></p>
+
+</form>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
